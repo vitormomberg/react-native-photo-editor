@@ -154,6 +154,10 @@ public class PhotoEditorActivity extends AppCompatActivity implements View.OnCli
                 .deleteView(deleteRelativeLayout) // add the deleted view that will appear during the movement of the views
                 .brushDrawingView(brushDrawingView) // add the brush drawing view that is responsible for drawing on the image view
                 .buildPhotoEditorSDK(); // build photo editor sdk
+
+        ArrayList<Integer> userColors = (ArrayList<Integer>) getIntent().getExtras().getSerializable("colorPickerColors");
+
+        photoEditorSDK.setBrushColor(userColors.get(0));
         photoEditorSDK.setOnPhotoEditorSDKListener(this);
 
         pager.addOnPageChangeListener(new ViewPager.OnPageChangeListener() {

@@ -1,11 +1,11 @@
 <resources>
     <string name="app_name">PhotoEditor</string>
     <string name="title_activity_photo_editor">PhotoEditorActivity</string>
-    <string name="done">Done</string>
-    <string name="save">Save</string>
-    <string name="clear_all">Clear All</string>
+    <string name="done">Finalizar</string>
+    <string name="save">Salvar</string>
+    <string name="clear_all">Limpar</string>
     <string name="camera">Camera</string>
-    <string name="gallery">Gallery</string>
+    <string name="gallery">Galeria</string>
     <string name="upload_dialog_title">Upload Image</string>
     <string name="upload_picker_title">Select Picture</string>
     <string name="directory_create_fail">Failed to create directory</string>
@@ -25,7 +25,7 @@
     <string name="ic_delete">"\ue92c"</string>
     <string name="choose_from_gallery">Choose From Gallery</string>
     <string name="choose_from_camera">Choose From Camera</string>
-    <string name="undo">Undo</string>
-    <string name="erase">Erase</string>
+    <string name="undo">Desfazer</string>
+    <string name="erase">Borracha</string>
 
 </resources>

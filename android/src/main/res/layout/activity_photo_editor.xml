@@ -165,38 +165,12 @@
                 android:paddingRight="26dp">
 
                 <TextView
-                    android:id="@+id/save_tv"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:layout_alignEnd="@+id/save_text_tv"
-                    android:layout_alignParentStart="true"
-                    android:layout_centerVertical="true"
-                    android:gravity="center"
-                    android:text="@string/ic_save"
-                    android:textColor="#FFFFFF"
-                    android:textSize="25sp" />
-
-                <TextView
-                    android:id="@+id/save_text_tv"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:layout_alignParentStart="true"
-                    android:layout_below="@+id/save_tv"
-                    android:layout_centerVertical="true"
-                    android:layout_marginTop="4dp"
-                    android:text="@string/save"
-                    android:textColor="#FFFFFF"
-                    android:textSize="15sp" />
-
-                <TextView
                     android:id="@+id/clear_all_tv"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_alignEnd="@+id/clear_all_text_tv"
+                    android:layout_alignParentStart="true"
                     android:layout_centerVertical="true"
-                    android:layout_marginStart="20dp"
-                    android:layout_marginTop="4dp"
-                    android:layout_toEndOf="@+id/save_tv"
                     android:gravity="center"
                     android:text="@string/ic_clear_all"
                     android:textColor="#FFFFFF"
@@ -206,12 +180,38 @@
                     android:id="@+id/clear_all_text_tv"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
+                    android:layout_alignParentStart="true"
                     android:layout_below="@+id/clear_all_tv"
+                    android:layout_centerVertical="true"
+                    android:layout_marginTop="4dp"
+                    android:text="@string/clear_all"
+                    android:textColor="#FFFFFF"
+                    android:textSize="15sp" />
+
+                <TextView
+                    android:id="@+id/save_tv"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignEnd="@+id/save_text_tv"
                     android:layout_centerVertical="true"
                     android:layout_marginStart="20dp"
                     android:layout_marginTop="4dp"
-                    android:layout_toEndOf="@+id/save_tv"
-                    android:text="@string/clear_all"
+                    android:layout_toEndOf="@+id/clear_all_tv"
+                    android:gravity="center"
+                    android:text="@string/ic_save"
+                    android:textColor="#FFFFFF"
+                    android:textSize="25sp" />
+
+                <TextView
+                    android:id="@+id/save_text_tv"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/save_tv"
+                    android:layout_centerVertical="true"
+                    android:layout_marginStart="20dp"
+                    android:layout_marginTop="4dp"
+                    android:layout_toEndOf="@+id/clear_all_tv"
+                    android:text="@string/save"
                     android:textColor="#FFFFFF"
                     android:textSize="15sp" />
 

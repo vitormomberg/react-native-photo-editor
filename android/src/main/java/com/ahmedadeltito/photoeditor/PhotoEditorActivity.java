@@ -297,6 +297,11 @@ public class PhotoEditorActivity extends AppCompatActivity implements View.OnCli
         LayoutInflater inflater = (LayoutInflater) getSystemService(Context.LAYOUT_INFLATER_SERVICE);
         View addTextPopupWindowRootView = inflater.inflate(R.layout.add_text_popup_window, null);
         final EditText addTextEditText = (EditText) addTextPopupWindowRootView.findViewById(R.id.add_text_edit_text);
+
+        ArrayList<Integer> userColors = (ArrayList<Integer>) getIntent().getExtras().getSerializable("colorPickerColors");
+
+        addTextEditText.setTextColor(userColors.get(0));
+
         TextView addTextDoneTextView = (TextView) addTextPopupWindowRootView.findViewById(R.id.add_text_done_tv);
         RecyclerView addTextColorPickerRecyclerView = (RecyclerView) addTextPopupWindowRootView.findViewById(R.id.add_text_color_picker_recycler_view);
         LinearLayoutManager layoutManager = new LinearLayoutManager(PhotoEditorActivity.this, LinearLayoutManager.HORIZONTAL, false);
@@ -516,9 +521,7 @@ public class PhotoEditorActivity extends AppCompatActivity implements View.OnCli
         } else if (v.getId() == R.id.add_image_emoji_tv) {
             mLayout.setPanelState(SlidingUpPanelLayout.PanelState.EXPANDED);
         } else if (v.getId() == R.id.add_text_tv) {
-            ArrayList<Integer> userColors = (ArrayList<Integer>) getIntent().getExtras().getSerializable("colorPickerColors");
-
-            openAddTextPopupWindow("", userColors.get(0));
+            openAddTextPopupWindow("", -1);
         } else if (v.getId() == R.id.add_pencil_tv) {
             updateBrushDrawingView(true);
         } else if (v.getId() == R.id.done_drawing_tv) {

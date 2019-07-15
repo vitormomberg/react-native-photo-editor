@@ -302,6 +302,8 @@ public class PhotoEditorActivity extends AppCompatActivity implements View.OnCli
 
         addTextEditText.setTextColor(userColors.get(0));
 
+        colorCodeTextView = userColors.get(0);
+        
         TextView addTextDoneTextView = (TextView) addTextPopupWindowRootView.findViewById(R.id.add_text_done_tv);
         RecyclerView addTextColorPickerRecyclerView = (RecyclerView) addTextPopupWindowRootView.findViewById(R.id.add_text_color_picker_recycler_view);
         LinearLayoutManager layoutManager = new LinearLayoutManager(PhotoEditorActivity.this, LinearLayoutManager.HORIZONTAL, false);
